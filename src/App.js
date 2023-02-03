@@ -3,6 +3,9 @@ import Role from "./components/Role";
 import { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import Input from "./components/Input";
+import Button from 'react-bootstrap/Button';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const [counter, setCounter] = useState(0);
@@ -49,15 +52,15 @@ const App = () => {
       />
       <Hero text="Halo Ini Gambar Default"/>
       Counter : {counter}<br/>
-      <button onClick={handleClickedAdd}>Add</button>--
-      <button onClick={handleClickedMin}>Delete</button>--
-      <button onClick={handleClickedRes}>Reset</button><br/><br/>
+      <Button variant="success" onClick={handleClickedAdd}>Add</Button>--
+      <Button variant="success" onClick={handleClickedMin}>Delete</Button>--
+      <Button variant="success" onClick={handleClickedRes}>Reset</Button><br/><br/>
 
       Counter : {counter2}<br/>
-      <button onClick={handleClickedAdd2}>Add</button>--
-      <button onClick={handleClickedMin2}>Delete</button>--
-      <button onClick={handleClickedRes2}>Reset</button><br/><br/>
-
+      <Button variant="success" onClick={handleClickedAdd2}>Add</Button>--
+      <Button variant="success" onClick={handleClickedMin2}>Delete</Button>--
+      <Button variant="success" onClick={handleClickedRes2}>Reset</Button><br/><br/>
+      
       <textarea onChange={e => setText(e.target.value)} value={text}></textarea><br/>
       <p>{text}</p>
       Hello World <br/>
