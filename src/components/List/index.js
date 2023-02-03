@@ -1,7 +1,7 @@
 const text2 = "Here's list of some marvel's hero that I like :"
 const arr = ["Hulk", "Captain Amerika", "Iron Man", "Thor", "Ghost Rider"]
 
-const List = () => { 
+const List = () => {
     return (
         <div>
             <p>{text2}</p>
